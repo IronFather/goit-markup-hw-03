@@ -1,0 +1,259 @@
+
+/* bg cl
+    - main ##FFFFFF
+    - second #2F303A #E5E5E5 #F5F4FA */
+
+/* txt cl 
+    - main  #757575
+    - second add #212121 #FFFFFF rgba(255, 255, 255, 0.6) #000000
+    - accent  #2196F3 */
+
+:root {
+    /* fonts */
+    --main-font: "Roboto";
+    --second-font: "Raleway"; 
+
+    /* fixed bug 2 checked colors by var */
+    /* txt cl */
+    --main-cl: #757575;
+    --second-cl: #212121;
+    --add_white_cl: #FFFFFF;
+    --add_black_cl: #000000;
+    --add_rgba_cl: rgba(255, 255, 255, 0.6);
+    --accent-cl: #2196F3;
+
+    /* fixed bug 3 checked bg-cl by var */
+    /* bg-cl */
+    --main-bg-cl: #FFFFFF;
+    --second-bg-cl: #2F303A;
+    --add-bg-cl: #E5E5E5;
+    --rare-bg-cl: #F5F4FA;
+    --accent-bg-cl: #2196F3;
+    /* others */
+}
+/* body */
+.body {
+    background: var(-main-bg-cl);
+    color: var(--main-cl);
+    font-family: var(--main-font), sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    font-style: normal;
+}
+
+/* common styles start */
+/* fixed bug 7 changed list-style */
+.list {
+    text-decoration: none;
+    list-style: none;
+    
+}
+
+/* HEADER */
+
+/* header-nav */
+.header-nav .header-link.current {
+color: var(--accent-cl);
+}
+
+ /* logo */
+ /* fixed bug 5 logo */
+.header-logo {
+    font-family: var(--second-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--accent-cl);
+    text-decoration: none;
+    list-style: none;
+}
+  
+.header-span { 
+    color: var(--add_black_cl);
+}
+        
+.footer-span {
+    color: var(--add_white_cl);
+}
+
+/* fixed bug 4 changed line-height */
+.header-link {
+color: var(--second-cl);
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    list-style: none;
+}
+
+.header-link:hover,
+.header-link:focus {
+    color: var(--accent-cl); 
+}
+
+/* header-contacts */
+.header-contacts a {
+    color: var(--main-cl); 
+    font-weight: 500;
+    line-height: 1.14px;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    list-style: none;
+}
+
+.header-contacts a:hover,
+.header-contacts a:focus {
+color: var(--accent-cl);
+}
+
+/* MAIN */
+/* hero */
+/* fixed bug 3 checked bg-cl by var and deleted excess */
+.hero { 
+    background: var(--second-bg-cl);  
+}
+
+.hero-title {
+    color: var(--add_white_cl);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.hero-btn {
+    background: var(--accent-bg-cl);
+    color: var(--add_white_cl);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+    background: var(--rare-bg-cl);
+    color: var(--second-cl);
+}
+
+/* features */
+
+.features-title {
+    visibility: hidden
+}
+
+.features-subtitle {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--second-cl);
+}   
+.features-txt {
+    color: var(--main-cl);
+}
+
+/* service */
+.service-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    color: var(--second-cl);
+}
+
+/* team */
+.team-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    color: var(--second-cl);
+}
+
+.team-subtitle {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    color: var(--second-cl);
+}
+
+.team-txt {
+    font-size: 16px;
+    line-height: 1.19;
+    color: var(--main-cl)
+}
+
+/* footer */
+.footer-logo {
+    font-family: var(--second-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--accent-cl);
+    text-decoration: none;
+    list-style: none;
+}
+
+/* fixed bug 6 added font-style normal */
+
+.list .address-link,
+.list .link {
+    text-decoration: none;
+    list-style: none;
+    font-style: normal;
+}
+
+.list .address-link {
+    color: var(--add_white_cl);
+}
+
+.list .link {
+     color: var(--add_rgba_cl);
+    }
+/* fixed bug 3 checked bg-cl by var and deleted excess */
+.footer {  
+    background: var(--second-bg-cl);
+}
+
+/* PORTFOLIO */
+
+.filters-btn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--second-cl);
+    background: var(--rare-bg-cl);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.filters-btn:hover,
+.filters-btn:focus {
+    background: var(--accent-bg-cl);
+    color: var(--add_white_cl);
+}
+
+.portfolio-title {
+visibility: hidden;    
+}
+
+.portfolio-subtitle {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2.00;
+    letter-spacing: 0.06em;
+    color: var(--second-cl);
+    font-style: normal;
+}
+
+.portfolio-txt {
+    font-size: 16px;
+    line-height: 1.88;
+    color:var(--main-cl);
+}
