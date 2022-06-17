@@ -1,1 +1,1 @@
-my second part of first project) deadline 14.06.2022. i did first part and ill do second one well and on time because i want to succed and im going to my dream step by step. it is second step)
+my self-development is continuing. i write this readme as a diary of my learning. thats fun) but i really want to succed and im going to my dream step by step. this is third step) deadline 21.06.2022. lets go make my future!
