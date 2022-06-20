@@ -113,7 +113,9 @@ color: var(--accent-cl);
 
 .hero { 
     background: var(--second-bg-cl);
-    text-align: center;  
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .hero-title {
@@ -125,6 +127,9 @@ color: var(--accent-cl);
     text-transform: uppercase;
     margin-top: 0;
     margin-bottom: 30px;
+    width: 696px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero-btn {
@@ -164,6 +169,7 @@ color: var(--accent-cl);
     line-height: 1.14;
     text-transform: uppercase;
     color: var(--second-cl);
+    margin-bottom: 10px;
 }   
 .features-txt {
     color: var(--main-cl);
@@ -350,4 +356,9 @@ margin-bottom: 32px;
 
 .header-contacts-tel {
     margin-left: 50px;
+}
+
+.features-container {
+    display: flex;
+
 }
