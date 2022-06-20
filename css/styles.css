@@ -13,7 +13,6 @@
     --main-font: "Roboto";
     --second-font: "Raleway"; 
 
-    /* fixed bug 2 checked colors by var */
     /* txt cl */
     --main-cl: #757575;
     --second-cl: #212121;
@@ -22,7 +21,6 @@
     --add_rgba_cl: rgba(255, 255, 255, 0.6);
     --accent-cl: #2196F3;
 
-    /* fixed bug 3 checked bg-cl by var */
     /* bg-cl */
     --main-bg-cl: #FFFFFF;
     --second-bg-cl: #2F303A;
@@ -44,10 +42,12 @@
 }
 
 /* common styles start */
-/* fixed bug 7 changed list-style */
+
 .list {
     text-decoration: none;
     list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
     
 }
 
@@ -59,8 +59,8 @@ color: var(--accent-cl);
 }
 
  /* logo */
- /* fixed bug 5 logo */
-.header-logo {
+
+ .header-logo {
     font-family: var(--second-font);
     font-weight: 700;
     font-size: 26px;
@@ -78,7 +78,6 @@ color: var(--accent-cl);
     color: var(--add_white_cl);
 }
 
-/* fixed bug 4 changed line-height */
 .header-link {
 color: var(--second-cl);
     font-weight: 500;
@@ -110,7 +109,7 @@ color: var(--accent-cl);
 
 /* MAIN */
 /* hero */
-/* fixed bug 3 checked bg-cl by var and deleted excess */
+
 .hero { 
     background: var(--second-bg-cl);  
 }
@@ -122,6 +121,8 @@ color: var(--accent-cl);
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .hero-btn {
@@ -133,6 +134,12 @@ color: var(--accent-cl);
     line-height: 1.87;
     letter-spacing: 0.06em;
     cursor: pointer;
+    padding: 10px 32px;
+    display: inline-block;
+    border-radius: 4px;
+    min-width: 200px;
+    text-align: center;
+    border: none;
 }
 
 .hero-btn:hover,
@@ -144,7 +151,9 @@ color: var(--accent-cl);
 /* features */
 
 .features-title {
-    visibility: hidden
+    visibility: hidden;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .features-subtitle {
@@ -156,6 +165,8 @@ color: var(--accent-cl);
 }   
 .features-txt {
     color: var(--main-cl);
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 /* service */
@@ -164,6 +175,8 @@ color: var(--accent-cl);
     font-size: 36px;
     line-height: 1.17;
     color: var(--second-cl);
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 /* team */
@@ -172,6 +185,8 @@ color: var(--accent-cl);
     font-size: 36px;
     line-height: 1.17;
     color: var(--second-cl);
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .team-subtitle {
@@ -184,7 +199,9 @@ color: var(--accent-cl);
 .team-txt {
     font-size: 16px;
     line-height: 1.19;
-    color: var(--main-cl)
+    color: var(--main-cl);
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 /* footer */
@@ -197,8 +214,6 @@ color: var(--accent-cl);
     text-decoration: none;
     list-style: none;
 }
-
-/* fixed bug 6 added font-style normal */
 
 .list .address-link,
 .list .link {
@@ -214,8 +229,8 @@ color: var(--accent-cl);
 .list .link {
      color: var(--add_rgba_cl);
     }
-/* fixed bug 3 checked bg-cl by var and deleted excess */
-.footer {  
+
+    .footer {  
     background: var(--second-bg-cl);
 }
 
@@ -231,6 +246,8 @@ color: var(--accent-cl);
     background: var(--rare-bg-cl);
     border-radius: 4px;
     cursor: pointer;
+    padding: 6px 22px;
+    display: inline-block;
 }
 
 .filters-btn:hover,
@@ -256,4 +273,31 @@ visibility: hidden;
     font-size: 16px;
     line-height: 1.88;
     color:var(--main-cl);
+    margin-top: 0;
+    margin-bottom: 0;
 }
+
+/* FLEXBOX */
+/* border-box for all elevrnts !!!-but its in modern-normalize file
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+*/
+
+/* next code */
+/* outline for all content */
+
+.header,
+.hero,
+.features,
+.service,
+.team,
+.footer,
+.portfolio {
+    outline: 2px solid tomato;
+    background-color: #d9f7a8;
+}
+
+.
