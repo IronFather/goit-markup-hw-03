@@ -68,6 +68,7 @@ color: var(--accent-cl);
     color: var(--accent-cl);
     text-decoration: none;
     list-style: none;
+    margin-right: 93px;
 }
   
 .header-span { 
@@ -111,7 +112,8 @@ color: var(--accent-cl);
 /* hero */
 
 .hero { 
-    background: var(--second-bg-cl);  
+    background: var(--second-bg-cl);
+    text-align: center;  
 }
 
 .hero-title {
@@ -122,7 +124,7 @@ color: var(--accent-cl);
     letter-spacing: 0.06em;
     text-transform: uppercase;
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 30px;
 }
 
 .hero-btn {
@@ -287,9 +289,9 @@ visibility: hidden;
 */
 
 /* next code */
-/* outline for all content */
 
-.header,
+/* OUTLINE AND BG */
+/* outline for all section */
 .hero,
 .features,
 .service,
@@ -299,5 +301,53 @@ visibility: hidden;
     outline: 2px solid tomato;
     background-color: #d9f7a8;
 }
+/* outline for all containers */
+.container {
+outline: 2px solid rgb(19, 201, 31);
+background-color: #85cdec;
+}
+/* pictures */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 
-.
+/* CONTAINER */
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.list {
+    display: flex;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
+.header-list-item:not(:last-child) {
+    margin-right: 50px;
+}
+.header-list-item {
+margin-top: 32px;
+margin-bottom: 32px;
+}
+
+.header-contacts {
+    margin-left: auto;
+}
+
+.header-contacts-tel {
+    margin-left: 50px;
+}
