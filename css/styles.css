@@ -27,6 +27,7 @@
     --add-bg-cl: #E5E5E5;
     --rare-bg-cl: #F5F4FA;
     --accent-bg-cl: #2196F3;
+    --border-card-cl: #EEEEEE;
     
     /* others */
     --items: 3;
@@ -279,7 +280,16 @@ color: var(--accent-cl);
 }
 
 .portfolio-title {
-visibility: hidden;    
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .portfolio-subtitle {
@@ -301,7 +311,7 @@ visibility: hidden;
 
 /* FLEXBOX */
 /* OUTLINE AND BG */
-/* outline for all section */
+/* outline for all section 
 .hero,
 .features,
 .service,
@@ -309,11 +319,13 @@ visibility: hidden;
 .footer,
 .portfolio {
     outline: 2px solid tomato;
-}
-/* outline for all containers */
+}*/
+
+/* outline for all containers 
 .container {
 outline: 2px solid rgb(19, 201, 31);
-}
+}*/
+
 /* pictures */
 img {
     display: block;
@@ -346,6 +358,7 @@ ul {
     padding-bottom: 94px;
 }
 
+/* INDEX FLEXBOX */
 /* header flexbox */
 
 .list {
@@ -451,6 +464,7 @@ padding-bottom: 32px;
 
 .team-list {
     --items: 4;
+    --indent: 30px;
 }
 
 .team-img {
@@ -494,3 +508,58 @@ padding-bottom: 32px;
 .address {
     padding-bottom: 60px;
 }
+
+/* PORTFOLIO FLEXBOX */
+
+/* filters flexbox */
+
+.portfolio-filters {
+    justify-content: center;
+}
+
+.portfolio-filters-item {
+display: flex;
+margin-bottom: 50px;
+}
+
+.portfolio-filters-item:not(:last-child) {
+    margin-right: 8px;
+}
+
+.filters-btn {
+    border: none;
+}
+
+/* portfolio flexbox */
+
+.portfolio-list {
+        --items: 3;
+        --indent: 30px;
+    }
+
+
+.portfolio-list-item {
+    background: var(--main-bg-cl);
+    border: 1px solid var(--border-card-cl);
+}
+
+.portfolio-img {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.portfolio-subtitle {
+    display: flex;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-bottom: 4px;
+}
+
+.portfolio-txt {
+    display: flex;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 20px;
+}
+
+border: 1px solid #ECECEC;
