@@ -5,11 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>goit-markup-hw-03-yashchuk-yurii</title>
+
     <!-- modern-normalize -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
+
     <!-- fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,9 +19,11 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+
     <!-- CSS -->
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
+
   <!-- body -->
   <body class="body">
     <!--header-->
@@ -51,6 +55,7 @@
         </div>
       </div>
     </header>
+
     <!-- main -->
     <main>
       <!--hero-->
@@ -60,6 +65,7 @@
           <button class="hero-btn" type="button">Заказать услугу</button>
         </div>
       </section>
+
       <!--features-->
       <section class="features section">
         <div class="container features-container">
@@ -96,6 +102,7 @@
           </ul>
         </div>
       </section>
+
       <!--cervice-->
       <section class="service section">
         <div class="container service-container">
@@ -131,63 +138,61 @@
           </ul>
         </div>
       </section>
+
       <!--team-->
       <section class="team section">
         <div class="container">
           <h2 class="team-title">Наша команда</h2>
-          <ul class="list">
-            <li>
-              <div>
-                <img
-                  src="./images/sec4/img4.jpg"
-                  alt="Игорь Демьяненко"
-                  width="270"
-                  height="260"
-                />
-                <h3 class="team-subtitle">Игорь Демьяненко</h3>
-                <p class="team-txt" lang="en">Product Designer</p>
-              </div>
+          <ul class="team-list list card-set">
+            <li class="team-list-item card-set-item">
+              <img
+                class="team-img"
+                src="./images/sec4/img4.jpg"
+                alt="Игорь Демьяненко"
+                width="270"
+                height="260"
+              />
+              <h3 class="team-subtitle">Игорь Демьяненко</h3>
+              <p class="team-txt" lang="en">Product Designer</p>
             </li>
-            <li>
-              <div>
-                <img
-                  src="./images/sec4/img5.jpg"
-                  alt="Ольга Репина"
-                  width="270"
-                  height="260"
-                />
-                <h3 class="team-subtitle">Ольга Репина</h3>
-                <p class="team-txt" lang="en">Frontend Developer</p>
-              </div>
+            <li class="team-list-item card-set-item">
+              <img
+                class="team-img"
+                src="./images/sec4/img5.jpg"
+                alt="Ольга Репина"
+                width="270"
+                height="260"
+              />
+              <h3 class="team-subtitle">Ольга Репина</h3>
+              <p class="team-txt" lang="en">Frontend Developer</p>
             </li>
-            <li>
-              <div>
-                <img
-                  src="./images/sec4/img6.jpg"
-                  alt="Николай Тарасов"
-                  width="270"
-                  height="260"
-                />
-                <h3 class="team-subtitle">Николай Тарасов</h3>
-                <p class="team-txt" lang="en">Marketing</p>
-              </div>
+            <li class="team-list-item card-set-item">
+              <img
+                class="team-img"
+                src="./images/sec4/img6.jpg"
+                alt="Николай Тарасов"
+                width="270"
+                height="260"
+              />
+              <h3 class="team-subtitle">Николай Тарасов</h3>
+              <p class="team-txt" lang="en">Marketing</p>
             </li>
-            <li>
-              <div>
-                <img
-                  src="./images/sec4/img7.jpg"
-                  alt="Михаил Ермаков"
-                  width="270"
-                  height="260"
-                />
-                <h3 class="team-subtitle">Михаил Ермаков</h3>
-                <p class="team-txt" lang="en">UI Designer</p>
-              </div>
+            <li class="team-list-item card-set-item">
+              <img
+                class="team-img"
+                src="./images/sec4/img7.jpg"
+                alt="Михаил Ермаков"
+                width="270"
+                height="260"
+              />
+              <h3 class="team-subtitle">Михаил Ермаков</h3>
+              <p class="team-txt" lang="en">UI Designer</p>
             </li>
           </ul>
         </div>
       </section>
     </main>
+
     <!--footer-->
     <footer class="footer">
       <div class="container">
@@ -195,7 +200,7 @@
           >Web<span class="footer-span">Studio</span></a
         >
         <address class="address">
-          <ul class="list">
+          <ul class="list adress-list">
             <li>
               <a
                 class="address-link"
@@ -204,12 +209,16 @@
               >
             </li>
             <li>
-              <a class="address-contacts link" href="mailto:info@example.com"
+              <a
+                class="address-contacts link address-email"
+                href="mailto:info@example.com"
                 >info@example.com</a
               >
             </li>
             <li>
-              <a class="address-contacts link" href="tel:+380991111111"
+              <a
+                class="address-contacts link address-tel"
+                href="tel:+380991111111"
                 >+38 099 111 11 11</a
               >
             </li>
