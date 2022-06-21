@@ -48,17 +48,17 @@
     list-style: none;
     margin-top: 0;
     margin-bottom: 0;
-    
+    padding-left: 0;
 }
 
-/* HEADER */
+/* HEADER TXT CL */
 
-/* header-nav */
+/* header-nav txt cl */
 .header-nav .header-link.current {
 color: var(--accent-cl);
 }
 
- /* logo */
+ /* logo txt cl */
 
  .header-logo {
     font-family: var(--second-font);
@@ -93,7 +93,7 @@ color: var(--second-cl);
     color: var(--accent-cl); 
 }
 
-/* header-contacts */
+/* header-contacts txt cl */
 .header-contacts a {
     color: var(--main-cl); 
     font-weight: 500;
@@ -108,14 +108,11 @@ color: var(--second-cl);
 color: var(--accent-cl);
 }
 
-/* MAIN */
-/* hero */
+/* MAIN TXT CL */
+/* hero txt cl */
 
 .hero { 
     background: var(--second-bg-cl);
-    text-align: center;
-    padding-top: 200px;
-    padding-bottom: 200px;
 }
 
 .hero-title {
@@ -125,11 +122,6 @@ color: var(--accent-cl);
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    margin-top: 0;
-    margin-bottom: 30px;
-    width: 696px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .hero-btn {
@@ -141,12 +133,6 @@ color: var(--accent-cl);
     line-height: 1.87;
     letter-spacing: 0.06em;
     cursor: pointer;
-    padding: 10px 32px;
-    display: inline-block;
-    border-radius: 4px;
-    min-width: 200px;
-    text-align: center;
-    border: none;
 }
 
 .hero-btn:hover,
@@ -155,12 +141,20 @@ color: var(--accent-cl);
     color: var(--second-cl);
 }
 
-/* features */
+/* features txt cl*/
 
+/* h2 hidden */
 .features-title {
-    visibility: hidden;
-    margin-top: 0;
-    margin-bottom: 0;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .features-subtitle {
@@ -169,22 +163,19 @@ color: var(--accent-cl);
     line-height: 1.14;
     text-transform: uppercase;
     color: var(--second-cl);
-    margin-bottom: 10px;
 }   
 .features-txt {
     color: var(--main-cl);
-    margin-top: 0;
-    margin-bottom: 0;
 }
 
-/* service */
+/* service txt cl*/
 .service-title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     color: var(--second-cl);
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 50px;
 }
 
 /* team */
@@ -212,7 +203,7 @@ color: var(--accent-cl);
     margin-bottom: 0;
 }
 
-/* footer */
+/* footer txt cl*/
 .footer-logo {
     font-family: var(--second-font);
     font-weight: 700;
@@ -242,7 +233,7 @@ color: var(--accent-cl);
     background: var(--second-bg-cl);
 }
 
-/* PORTFOLIO */
+/* PORTFOLIO TXT CL*/
 
 .filters-btn {
     font-weight: 500;
@@ -286,16 +277,6 @@ visibility: hidden;
 }
 
 /* FLEXBOX */
-/* border-box for all elevrnts !!!-but its in modern-normalize file
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-*/
-
-/* next code */
-
 /* OUTLINE AND BG */
 /* outline for all section */
 .hero,
@@ -305,18 +286,26 @@ visibility: hidden;
 .footer,
 .portfolio {
     outline: 2px solid tomato;
-    background-color: #d9f7a8;
 }
 /* outline for all containers */
 .container {
 outline: 2px solid rgb(19, 201, 31);
-background-color: #85cdec;
 }
 /* pictures */
 img {
     display: block;
     max-width: 100%;
     height: auto;
+}
+
+/* Reset some styles */
+h1,
+h2,
+h3,
+p,
+ul {
+    margin: 0;
+    padding: 0;
 }
 
 /* CONTAINER */
@@ -327,6 +316,8 @@ img {
     margin-left: auto;
     margin-right: auto;
 }
+
+/* header flexbox */
 
 .list {
     display: flex;
@@ -358,7 +349,79 @@ margin-bottom: 32px;
     margin-left: 50px;
 }
 
+/* hero flexbox */
+
+.hero {
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.hero-title {
+    margin-top: 0;
+    margin-bottom: 30px;
+    width: 696px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.hero-btn {
+    padding: 10px 32px;
+    display: inline-block;
+    border-radius: 4px;
+    min-width: 200px;
+    text-align: center;
+    border: none;
+}
+
+/* features flexbox */
+
 .features-container {
     display: flex;
-
 }
+
+.features {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.features-subtitle {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.features-txt {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.features-list-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+/* service flexbox */
+
+.service-container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.service-img:not(:last-child) {
+    margin-right: 30px;
+}
+
+/* team flexbox
+
+/* footer flexbox*/
+
+.footer-logo {
+    display: inline-block;
+    padding-top: 60px;
+    margin-bottom: 20px;
+}
+
+.address-link,
+.address-contacts
+
+
