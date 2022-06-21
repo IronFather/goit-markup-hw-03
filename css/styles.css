@@ -28,6 +28,7 @@
     --rare-bg-cl: #F5F4FA;
     --accent-bg-cl: #2196F3;
     --border-card-cl: #EEEEEE;
+    --border-header-cl: #ECECEC;
     
     /* others */
     --items: 3;
@@ -391,6 +392,11 @@ padding-bottom: 32px;
     margin-left: 50px;
 }
 
+.header {
+    border-bottom: 1px solid var(--border-header-cl);
+}
+
+
 /* hero flexbox */
 
 .hero {
@@ -562,4 +568,4 @@ margin-bottom: 50px;
     padding-bottom: 20px;
 }
 
-border: 1px solid #ECECEC;
+
