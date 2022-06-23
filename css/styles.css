@@ -541,29 +541,11 @@ padding-bottom: 32px;
         --indent: 30px;
     }
 
-
-.portfolio-list-item {
-    background: var(--main-bg-cl);
-    border: 1px solid var(--border-card-cl);
+/* fixed 5 made changes to cards of portfolio */
+.portfolio-service {
+    padding: 20px 24px;
+    border-left: 1px solid var(--border-card-cl);
+    border-right: 1px solid var(--border-card-cl);
+    border-bottom: 1px solid var(--border-card-cl);
 }
-
-.portfolio-img {
-    display: flex;
-    margin-bottom: 20px;
-}
-
-.portfolio-subtitle {
-    display: flex;
-    padding-left: 24px;
-    padding-right: 24px;
-    margin-bottom: 4px;
-}
-
-.portfolio-txt {
-    display: flex;
-    padding-left: 24px;
-    padding-right: 24px;
-    padding-bottom: 20px;
-}
-
 
