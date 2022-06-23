@@ -496,9 +496,10 @@ padding-bottom: 32px;
 
 /* footer flexbox*/
 /* fixed 2 padding-top from logo to footer */
-
+/* fixed 3 padding-bottom from address to footer */
 .footer {
     padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .footer-logo {
@@ -513,10 +514,6 @@ padding-bottom: 32px;
 .address-link,
 .address-email {
     margin-bottom: 9px;
-}
-
-.address {
-    padding-bottom: 60px;
 }
 
 /* PORTFOLIO FLEXBOX */
