@@ -519,14 +519,11 @@ padding-bottom: 32px;
 /* PORTFOLIO FLEXBOX */
 
 /* filters flexbox */
+/* fixed 4 margin-bottom from portfolio-filters-item to portfolio-filters */
 
 .portfolio-filters {
     justify-content: center;
-}
-
-.portfolio-filters-item {
-display: flex;
-margin-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 .portfolio-filters-item:not(:last-child) {
