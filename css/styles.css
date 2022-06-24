@@ -239,19 +239,21 @@ color: var(--accent-cl);
     list-style: none;
 }
 
-.list .address-link,
-.list .link {
+.address-items {
     text-decoration: none;
     list-style: none;
     font-style: normal;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
-.list .address-link {
+.address .address-link {
     color: var(--add_white_cl);
 }
 
-.list .link {
-     color: var(--add_rgba_cl);
+.address .address-email, 
+.address .address-tel {
+    color: var(--add_rgba_cl);
     }
 
     .footer {  
@@ -507,12 +509,11 @@ padding-bottom: 32px;
     margin-bottom: 20px;
 }
 
-.adress-list {
-    display: block;
+.address-list {
+    display: inline-block;
 }
 
-.address-link,
-.address-email {
+.address-items:not(:last-child) {
     margin-bottom: 9px;
 }
 
