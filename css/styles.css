@@ -302,6 +302,8 @@ color: var(--accent-cl);
     letter-spacing: 0.06em;
     color: var(--second-cl);
     font-style: normal;
+/* fixed 8 margin-bottom in cards of portfolio */
+    margin-bottom: 4px;
 }
 
 .portfolio-txt {
