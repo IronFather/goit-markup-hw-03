@@ -295,6 +295,7 @@ color: var(--accent-cl);
     overflow: hidden;
 }
 
+/* fixed 8 margin-bottom in cards of portfolio */
 .portfolio-subtitle {
     font-weight: 700;
     font-size: 18px;
@@ -302,7 +303,6 @@ color: var(--accent-cl);
     letter-spacing: 0.06em;
     color: var(--second-cl);
     font-style: normal;
-/* fixed 8 margin-bottom in cards of portfolio */
     margin-bottom: 4px;
 }
 
@@ -383,9 +383,16 @@ ul {
 .header-list-item:not(:last-child) {
     margin-right: 50px;
 }
-.header-list-item {
-padding-top: 32px;
-padding-bottom: 32px;
+
+/* fixed 9 padding from header-list-item to header-link*/
+.header-link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+.header-contacts-item {
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .header-contacts {
@@ -553,3 +560,6 @@ padding-bottom: 32px;
     border-bottom: 1px solid var(--border-card-cl);
 }
 
+.portfolio-link {
+    text-decoration: none;
+}
