@@ -527,6 +527,11 @@ ul {
     margin-bottom: 9px;
 }
 
+/* fixed 10 changed list-style in address */
+.address-list-items {
+    list-style: none;
+}
+
 /* PORTFOLIO FLEXBOX */
 
 /* filters flexbox */
